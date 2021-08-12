@@ -1,0 +1,356 @@
+$font1: "Orbitron", sans-serif;
+$font2: "Lato", sans-serif;
+$color1: #8d8d8d;
+$color2: black;
+$borderColorDark: #1d1d1d;
+$borderColorLight: #ebebeb;
+
+h2 {
+  font-family: $font2;
+  font-size: 70px;
+  font-weight: 700;
+  color: $color2;
+  padding: 30px 0;
+}
+
+h3 {
+  font-family: $font2;
+  font-size: 38px;
+  color: $color2;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+h5 {
+  font-family: $font2;
+  font-size: 18px;
+  color: $color2;
+  letter-spacing: 2pt;
+}
+
+h6 {
+  font-family: $font2;
+  color: $color2;
+  padding: 15px 0;
+  line-height: 15px;
+}
+
+p {
+  font-family: $font2;
+  font-size: 13px;
+  color: $color1;
+  padding: 10px 0;
+  line-height: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 4px;
+}
+.mb-3 {
+  margin-bottom: 12px;
+}
+.mb-4 {
+  margin-bottom: 16px;
+}
+.mb-5 {
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-top: 25px;
+
+  input[type="button"] {
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: white;
+    height: 45px;
+    width: 125px;
+    font-family: $font2;
+    font-size: 13px;
+    color: black;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: black;
+      color: white;
+      border: solid 1px white;
+    }
+  }
+}
+
+.category-btn {
+  input[type="button"] {
+    border-radius: 15px;
+    background: transparent;
+    height: 25px;
+    width: 100px;
+    color: white;
+    border: 1px solid white;
+    font-family: $font2;
+    font-size: 13px;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+.line-ver {
+  z-index: 10;
+  position: relative;
+  top: -20px;
+  height: 570px;
+  overflow: hidden;
+}
+
+header {
+  background-color: black;
+  height: 90px;
+  position: sticky;
+  border-bottom: 1px solid $borderColorDark;
+  top: 0;
+  z-index: 100;
+
+  .logo {
+    height: 90px;
+    line-height: 90px;
+    padding: 15px 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    line-height: 90px;
+    font-family: $font1;
+    color: $color1;
+
+    .nav-item {
+      flex: 0 0 auto;
+      text-transform: uppercase;
+      border-left: 1px solid $borderColorDark;
+      cursor: pointer;
+      padding: 0 16px;
+    }
+
+    :hover {
+      background-color: #181818;
+      color: white;
+    }
+  }
+}
+
+.home {
+  background-image: url(images/home_space_sectionbg1.jpg);
+  width: 100%;
+  height: 650px;
+  border-bottom: 1px solid $borderColorLight;
+
+  .text-font {
+    background-color: #fff;
+    width: 100%;
+    height: 650px;
+    border-bottom: 1px solid $borderColorLight;
+
+    .text {
+      width: 60%;
+      height: 300px;
+      margin-top: 160px;
+      margin-left: 50px;
+
+      .line-hor {
+        z-index: 10;
+        position: relative;
+        left: -150px;
+      }
+    }
+  }
+}
+
+.technology {
+  margin-top: 100px;
+
+  .technology-text {
+    margin-left: 15px;
+  }
+}
+
+.staff-section {
+  padding-top: 25px;
+
+  .staff {
+    display: flex;
+
+    .staff-item {
+      padding: 10px;
+
+      img {
+        height: 150px;
+      }
+    }
+  }
+}
+
+.articles-slider {
+  background-image: url(images/home_space_blog2-1200x800.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 25px;
+
+  h2,
+  h6 {
+    color: white;
+  }
+
+  .button {
+    input[type="button"] {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+
+.category-square {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: start;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 120px;
+  width: 250px;
+  font-family: $font2;
+  font-size: 13px;
+  color: black;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.articles-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .articles {
+    .article-item {
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      z-index: 20;
+
+      &:hover .preview {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+
+      .preview {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.5s;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 9, 28, 0.3);
+          z-index: 0;
+        }
+      }
+
+      .category-btn {
+        padding-left: 25px;
+        position: relative;
+        top: 20px;
+        z-index: 10;
+      }
+
+      h3 {
+        padding-top: 60px;
+        padding-left: 25px;
+        padding-right: 25px;
+        position: relative;
+        z-index: 10;
+
+        a {
+          text-decoration: none;
+          color: white;
+          z-index: 10;
+        }
+      }
+
+      .info-block {
+        padding-left: 25px;
+        position: absolute;
+        bottom: 10px;
+        z-index: 10;
+
+        span {
+          color: white;
+          font-family: $font2;
+          padding-right: 10px;
+
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contacts-section {
+  background-color: black;
+  color: white;
+  font-family: $font2;
+  h5 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white;
+  }
+  .social-media-item {
+    margin-bottom: 20px;
+    i {
+      color: white;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+.subscribe-form {
+
+    input {
+        width: 80%;
+        height: 30px;
+        border-radius: 15px;
+        border: solid 1px white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    background-color: black;
+    border-top: solid 1px $borderColorDark;
+    text-align: center;
+}

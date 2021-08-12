@@ -1,0 +1,363 @@
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  color: black;
+  padding: 30px 0;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 38px;
+  color: black;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: black;
+  letter-spacing: 2pt;
+}
+
+h6 {
+  font-family: "Lato", sans-serif;
+  color: black;
+  padding: 15px 0;
+  line-height: 15px;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  color: #8d8d8d;
+  padding: 10px 0;
+  line-height: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 4px;
+}
+
+.mb-3 {
+  margin-bottom: 12px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-5 {
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-top: 25px;
+}
+
+.button input[type="button"] {
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: white;
+  height: 45px;
+  width: 125px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  color: black;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.button input[type="button"]:hover {
+  background-color: black;
+  color: white;
+  border: solid 1px white;
+}
+
+.category-btn input[type="button"] {
+  border-radius: 15px;
+  background: transparent;
+  height: 25px;
+  width: 100px;
+  color: white;
+  border: 1px solid white;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.category-btn input[type="button"]:hover {
+  background-color: white;
+  color: black;
+}
+
+.line-ver {
+  z-index: 10;
+  position: relative;
+  top: -20px;
+  height: 570px;
+  overflow: hidden;
+}
+
+header {
+  background-color: black;
+  height: 90px;
+  position: -webkit-sticky;
+  position: sticky;
+  border-bottom: 1px solid #1d1d1d;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  height: 90px;
+  line-height: 90px;
+  padding: 15px 0;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  line-height: 90px;
+  font-family: "Orbitron", sans-serif;
+  color: #8d8d8d;
+}
+
+header .menu .nav-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  text-transform: uppercase;
+  border-left: 1px solid #1d1d1d;
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+header .menu :hover {
+  background-color: #181818;
+  color: white;
+}
+
+.home {
+  background-image: url(images/home_space_sectionbg1.jpg);
+  width: 100%;
+  height: 650px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.home .text-font {
+  background-color: #fff;
+  width: 100%;
+  height: 650px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.home .text-font .text {
+  width: 60%;
+  height: 300px;
+  margin-top: 160px;
+  margin-left: 50px;
+}
+
+.home .text-font .text .line-hor {
+  z-index: 10;
+  position: relative;
+  left: -150px;
+}
+
+.technology {
+  margin-top: 100px;
+}
+
+.technology .technology-text {
+  margin-left: 15px;
+}
+
+.staff-section {
+  padding-top: 25px;
+}
+
+.staff-section .staff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.staff-section .staff .staff-item {
+  padding: 10px;
+}
+
+.staff-section .staff .staff-item img {
+  height: 150px;
+}
+
+.articles-slider {
+  background-image: url(images/home_space_blog2-1200x800.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 25px;
+}
+
+.articles-slider h2,
+.articles-slider h6 {
+  color: white;
+}
+
+.articles-slider .button input[type="button"] {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.articles-slider .button input[type="button"]:hover {
+  background-color: white;
+  color: black;
+}
+
+.category-square {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: start;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 120px;
+  width: 250px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  color: black;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.articles-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.articles-section .articles .article-item {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.articles-section .articles .article-item:hover .preview {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.articles-section .articles .article-item .preview {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.articles-section .articles .article-item .preview:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 9, 28, 0.3);
+  z-index: 0;
+}
+
+.articles-section .articles .article-item .category-btn {
+  padding-left: 25px;
+  position: relative;
+  top: 20px;
+  z-index: 10;
+}
+
+.articles-section .articles .article-item h3 {
+  padding-top: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+  z-index: 10;
+}
+
+.articles-section .articles .article-item h3 a {
+  text-decoration: none;
+  color: white;
+  z-index: 10;
+}
+
+.articles-section .articles .article-item .info-block {
+  padding-left: 25px;
+  position: absolute;
+  bottom: 10px;
+  z-index: 10;
+}
+
+.articles-section .articles .article-item .info-block span {
+  color: white;
+  font-family: "Lato", sans-serif;
+  padding-right: 10px;
+}
+
+.articles-section .articles .article-item .info-block span i {
+  color: white;
+}
+
+.contacts-section {
+  background-color: black;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.contacts-section h5 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.contacts-section .social-media-item {
+  margin-bottom: 20px;
+}
+
+.contacts-section .social-media-item i {
+  color: white;
+}
+
+.contacts-section .social-media-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.subscribe-form input {
+  width: 80%;
+  height: 30px;
+  border-radius: 15px;
+  border: solid 1px white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: black;
+  border-top: solid 1px #1d1d1d;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
