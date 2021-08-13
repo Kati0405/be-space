@@ -131,7 +131,6 @@ header .menu {
       -ms-flex-align: center;
           align-items: center;
   height: 90px;
-  line-height: 90px;
   font-family: "Orbitron", sans-serif;
   color: #8d8d8d;
 }
@@ -287,7 +286,7 @@ header .menu :hover {
   padding-left: 25px;
   position: relative;
   top: 20px;
-  z-index: 10;
+  z-index: 15;
 }
 
 .articles-section .articles .article-item h3 {
@@ -349,15 +348,70 @@ header .menu :hover {
 .subscribe-form input {
   width: 80%;
   height: 30px;
-  border-radius: 15px;
+  border-radius: 10px;
   border: solid 1px white;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.subscribe-form input:focus-visible {
+  outline: none;
+}
+
+.subscribe-form .button input[type="button"] {
+  background: transparent;
+  border: solid 1px white;
+  color: white;
+}
+
+.subscribe-form .button input[type="button"]:hover {
+  background-color: white;
+  color: black;
+  border: solid 1px white;
 }
 
 footer {
   background-color: black;
   border-top: solid 1px #1d1d1d;
   text-align: center;
+}
+
+.dropdown:hover .dropbtn {
+  color: white;
+}
+
+.dropdown .dropbtn {
+  background-color: black;
+  color: #8d8d8d;
+  text-decoration: none;
+  position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+}
+
+.dropdown .dropdown-content li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.dropdown .dropdown-content li a {
+  text-align: left;
+  text-decoration: none;
+  color: #8d8d8d;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.dropdown .dropdown-content li a:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
